@@ -3,9 +3,12 @@
 
 const express = require("express");
 
-const app = express();
-const ExpressError = require("./expressError")
 
+const companiesRoutes = require("./routes/companies");
+const invoicesRoutes = require("./routes/invoices");
+
+const ExpressError = require("./expressError")
+const app = express();
 app.use(express.json());
 
 
